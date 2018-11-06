@@ -1,0 +1,28 @@
+
+
+
+
+<center><div class="center jumbotron">
+
+<div class="row container-fluid">
+
+<div class=col-md-3>
+
+</div>
+
+<div class="col-md-6">
+
+<% if user_signed_in? %>
+
+  redirect_to gossips_path
+
+<% else %>
+
+  <h1>Bienvenue sur le site des Gossips</h1>
+
+  <%= link_to "Enregistre-toi !", "users/sign_up", class: "btn btn-lg btn-primary" %>
+  <%= link_to "Connecte-toi !", "users/sign_in", class: "btn btn-lg btn-primary" %>
+
+<% end %>
+
+</div>
